@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(245, 233, 219);
+    color:black;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #89a783;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+header button {
+    background-color: #688565;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+section {
+    padding: auto 20px;
+    margin: 20px auto;
+    height: 100vh;
+    width: 70%;
+}
+
+#sobre div{
+    width: 50%;
+}
+
+#sobre img{
+    height: 400px;
+}
+
+#sobre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h2{
+    margin-bottom: 10px;
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+.projeto{
+    background-color:rgb(255, 254, 250);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+button {
+    width: 160px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: #c26a59;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+/* -----modo escuro----- */
+
+.dark-mode{
+    background-color: rgb(34, 34, 39);
+    color: aliceblue;
+}
+
+.dark-mode header {
+    background-color: rgb(22, 22, 22);
+}
+
+.dark-mode header button{
+    background-color: #444;
+    color: #f5f5f5;
+}
+
+.dark-mode .projeto button {
+    background-color: #312f3d;
+    color: #f5f5f5;
+}
+
+.dark-mode .projeto{
+    background-color: #555;
+}
+
+@media(max-width:480px) {
+    #sobre img {
+        height: 200px;
+        width: 200px;
+       
+    }
+    #sobre{
+        flex-direction: column;
+        
+    }
+
+    
+   
+    h2 {
+        font-size: 40px;
+        
+    }
+    #sobre p{
+        font-size: 17px;
+        text-align: center;
+        width: 160px;
+    }
+
+
+}
+
